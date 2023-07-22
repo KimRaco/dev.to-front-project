@@ -1,0 +1,55 @@
+.user-img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-title {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  .card-title a {
+    color: #08090a;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    color: rgb(80, 99, 255);
+  }
+
+.list-tag__main {
+    font-size: 0.8rem;
+    border: 1px solid transparent;
+    color: #808080;
+    padding: 0.2rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    list-style: none;
+    width: fit-content;
+    block-size: fit-content;
+
+}
+
+.list-tag__main:hover {
+    border-color: #808080;
+    border-radius: 0.5em;
+    background-color: rgba(141, 140, 140, 0.1);
+    
+}
+
+img.card-img-top {
+    height: 16.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .card h4 {
+    font-size: 1.85rem;
+  }
+  .card .date {
+    font-size: 0.8rem;
+  }
+  
+
+/* :not(:first-child) img.card-img-top {
+  display: none;
+} */

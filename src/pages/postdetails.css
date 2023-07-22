@@ -1,0 +1,43 @@
+.left-aside {
+
+    .msj {
+        transition: all 1s;
+    }
+
+
+    .heart:hover {
+        background-color: hsla(0, 50%, 69%, 0.452);
+
+        
+    }
+
+    .comment:hover {
+        background-color: hsla(36, 68%, 77%, 0.452);
+    }
+
+    .save:hover {
+        background-color: hsla(236, 82%, 78%, 0.452);
+    }
+
+    .dots:hover {
+        background-color: hsla(0, 0%, 79%, 0.452);
+        
+    }
+
+    .msj:hover {
+    
+        text-align: center;
+        display: block !important;
+        top: -50%;
+        z-index: 1;
+    }
+
+   
+
+   
+  
+
+}
+
+
+

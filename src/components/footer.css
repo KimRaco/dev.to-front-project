@@ -1,0 +1,9 @@
+footer {
+    width: 100%;
+    padding: 2em;
+    background-color: rgb(221, 222, 225);
+  }
+  
+  footer ul li {
+    margin: 0 1rem;
+  }
