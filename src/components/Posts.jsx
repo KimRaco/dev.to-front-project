@@ -4,8 +4,40 @@ import { Link } from 'react-router-dom';
 import "./posts.css"
 
 
+
+
+
 const Posts = ({ posts }) => {
 
+    let isLogged = localStorage.getItem('token');
+
+    const token = localStorage.getItem('token');
+    
+    const BASE_URL = "http://localhost:8080"
+
+    const deleteByid = async (id) => {
+        let response = await fetch(
+          `${BASE_URL}/posts/${id}`,
+           {
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}`, 
+            },
+            method: 'DELETE'
+          });
+        let data = await response.json();
+      
+        return data;
+      }
+
+
+
+     const handleClick = (async (e) => {
+         e.currentTarget.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+         await deleteByid(e.currentTarget.id);
+     })
+
+   
 
     return (
         <>
@@ -41,7 +73,20 @@ const Posts = ({ posts }) => {
                                     </div>
                                     <div>
                                         <span className="d-flex align-items-center">7 days ago
-                                            <button className="btn btn-danger py-0 mx-3" id="649359b7bf0da2d5498f6f50">Delete</button>
+                                        {isLogged && <>
+                                            <div className="dropdown">
+                                            <button className="btn dropdown-toggle mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Options
+                                            </button>
+                                            <ul className="dropdown-menu">
+                                            <li><button onClick={handleClick} className="dropdown-item text-danger"  id={post._id} >Delete</button></li>
+                                            <li><button  className="dropdown-item"  id={post._id} >Edit</button></li>
+
+                                            </ul>
+                                          </div>
+                                        
+                                        </>
+                                        }
                                             <img src="src/assets/save-icon.svg" alt="" />
                                         </span>
                                     </div>

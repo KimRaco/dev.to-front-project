@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import moment from "moment";
 import "./postdetails.css"
 
+
+
 const API_URL = "http://localhost:8080/posts"
 
 
@@ -89,16 +91,17 @@ const PostDetails = () => {
                           <span className="fs-6 fw-light" id="date-post">{moment(post?.date).format('MMM Do')}{" ("}{moment(post?.date).fromNow()}{")"}</span>
                         </span>
                       </div>
+                         
                       <div className="">
                         <h1 className="card-title" id="title-post">{post?.title}</h1>
                         <ul className="list-tag__main" id="tags-list">
 
                         </ul>
                       </div>
-                      <div>
+                      <div >
                         <p className="card-text" id="details-post">{post?.content}</p>
-                        <button className="btn btn-danger py-0 btn-delete">Delete post</button>
                       </div>
+                       
                     </div>
 
                     <div className=" px-5 py-3">
