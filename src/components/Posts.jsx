@@ -12,32 +12,32 @@ const Posts = ({ posts }) => {
     let isLogged = localStorage.getItem('token');
 
     const token = localStorage.getItem('token');
-    
+
     const BASE_URL = "http://localhost:8080"
 
     const deleteByid = async (id) => {
         let response = await fetch(
-          `${BASE_URL}/posts/${id}`,
-           {
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Bearer ${token}`, 
-            },
-            method: 'DELETE'
-          });
+            `${BASE_URL}/posts/${id}`,
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`,
+                },
+                method: 'DELETE'
+            });
         let data = await response.json();
-      
+
         return data;
-      }
+    }
 
 
 
-     const handleClick = (async (e) => {
-         e.currentTarget.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
-         await deleteByid(e.currentTarget.id);
-     })
+    const handleClick = (async (e) => {
+        e.currentTarget.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+        await deleteByid(e.currentTarget.id);
+    })
 
-   
+
 
     return (
         <>
@@ -57,7 +57,7 @@ const Posts = ({ posts }) => {
                                 </div>
                                 <div>
                                     <h4 className="card-title mb-1 mt-0">
-                                    <Link to={`${post._id}`}><h2 className="fs-4" >{post.title}</h2></Link>
+                                        <Link to={`${post._id}`}><h2 className="fs-4" >{post.title}</h2></Link>
                                     </h4>
                                     <ul className="list-tag__main">
                                         <li >{"#"}{post.tags}</li>
@@ -73,20 +73,20 @@ const Posts = ({ posts }) => {
                                     </div>
                                     <div>
                                         <span className="d-flex align-items-center">7 days ago
-                                        {isLogged && <>
-                                            <div className="dropdown">
-                                            <button className="btn dropdown-toggle mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                              Options
-                                            </button>
-                                            <ul className="dropdown-menu">
-                                            <li><button onClick={handleClick} className="dropdown-item text-danger"  id={post._id} >Delete</button></li>
-                                            <li><button  className="dropdown-item"  id={post._id} >Edit</button></li>
+                                            {isLogged && <>
+                                                <div className="dropdown">
+                                                    <button type="button" className="btn dropdown-toggle mx-2" data-bs-toggle="dropdown" ><img className="dots rounded-circle p-2"
+                                                        src="src/assets/three-dots.svg" alt="" /></button>
+                        
+                                                    <ul className="dropdown-menu">
+                                                        <li><button onClick={handleClick} className="dropdown-item text-danger" id={post._id} >Delete</button></li>
+                                                        <li><button className="dropdown-item" id={post._id} >Edit</button></li>
 
-                                            </ul>
-                                          </div>
-                                        
-                                        </>
-                                        }
+                                                    </ul>
+                                                </div>
+
+                                            </>
+                                            }
                                             <img src="src/assets/save-icon.svg" alt="" />
                                         </span>
                                     </div>

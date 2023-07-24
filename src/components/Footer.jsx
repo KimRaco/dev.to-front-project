@@ -4,22 +4,15 @@ import "./footer.css"
 const Footer = () => {
     return (
         <footer>
-            <div className="container-fluid">
+            <div className="col-12">
                 <div className="d-flex justify-content-center">
                     <p className="text-center"><a href="#">DEV Community 👩‍💻👨‍💻</a>
                         — A constructive and inclusive social network for software developers. With you every step of your
                         journey.</p>
                 </div>
-                <div className="d-flex justify-content-center text-center flex-wrap">
-                    <ul className="d-flex text-decoration-none ">
-                        <li><a href="#" >Home</a></li>
-                        <li><a href="#" >Listings</a></li>
-                        <li><a href="#" >Podcasts</a></li>
-                        <li><a href="#" >Videos</a></li>
-                        <li><a href="#" >Tags</a></li>
-                        <li><a href="#" >FAQ</a></li>
-                        <li><a href="#" >Forem Shop</a></li>
-                        <li><a href="#" >Sponsors</a></li>
+                <div className="d-flex justify-content-center  ">
+                    <ul className="d-flex text-decoration-none  text-center">
+                        
                         <li><a href="#" >About</a></li>
                         <li><a href="#" >Contact</a></li>
                         <li><a href="#" >Guides</a></li>

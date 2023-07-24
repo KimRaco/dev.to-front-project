@@ -30,14 +30,13 @@ const Navbar = ({ setSearch }) => {
                     </a>
                     <div className="input-group  border rounded-2 align-items-center d-none d-lg-flex w-75">
                         <input id="search" type="search" onChange={handleChange} className="form-control border border-0" placeholder="Search..." />
-                        <div className="input-group-append">
-                            <button className="btn" type="button"><img src="src/assets/search-icon.svg" alt="" /></button>
+                        <div className="input-group-append ">
+                            <button className="btn " type="button"><img src="src/assets/search-icon.svg" alt="" /></button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img src="src/assets/search-icon.svg" alt="search" className="iconsearch d-lg-none d-inline" width="24"
-                        height="24" />
+                    
                     {!isLogged &&
                         <div className="login-card d-inline">
 
