@@ -34,8 +34,7 @@ const CreatePost = () => {
 
                 window.open( '/','_self');
 
-                // let dataPost = await response.json()
-                // return dataPost
+                
                
 
             } catch (error) {

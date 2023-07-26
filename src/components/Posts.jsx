@@ -33,7 +33,7 @@ const Posts = ({ posts }) => {
 
 
     const handleClick = (async (e) => {
-        e.currentTarget.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+        e.currentTarget.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
         await deleteByid(e.currentTarget.id);
     })
 
@@ -66,13 +66,13 @@ const Posts = ({ posts }) => {
                                 <div className="d-flex justify-content-between w-100">
                                     <div className="d-flex align-items-center">
                                         <span className="d-flex align-items-center me-3">
-                                            <img src="src/assets/heart-icon.svg" alt="" />8 Reactions</span>
+                                            <img src="src/assets/heart-icon.svg" alt="" /> Reactions</span>
                                         <span className="d-flex align-items-center">
-                                            <img src="src/assets/comment-icon.svg" alt="" />2 Comments
+                                            <img src="src/assets/comment-icon.svg" alt="" /> Comments
                                         </span>
                                     </div>
                                     <div>
-                                        <span className="d-flex align-items-center">7 days ago
+                                        <span className="d-flex align-items-center">
                                             {isLogged && <>
                                                 <div className="dropdown">
                                                     <button type="button" className="btn dropdown-toggle mx-2" data-bs-toggle="dropdown" ><img className="dots rounded-circle p-2"
