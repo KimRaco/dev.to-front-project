@@ -63,7 +63,7 @@ const Navbar = ({ setSearch }) => {
                                 <img src="src/assets/profile-avatar.webp" alt="profile avatar" width="40" height="40"
                                     className="rounded-circle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" />
                                 <ul className="dropdown-menu dropdown-menu-end">
-                                    <li><a className="dropdown-item btn btn-outline-primary border-0" type="button" href="./views/profile.html">Profile</a></li>
+                                    <li><a className="dropdown-item btn btn-outline-primary border-0" type="button" href="#">Profile</a></li>
                                     <li><button className="dropdown-item" href="#" onClick={logOut} id="sign_out">Sing Out</button></li>
                                 </ul>
                             </div>
