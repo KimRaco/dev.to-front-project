@@ -20,10 +20,7 @@ const Navbar = ({ setSearch }) => {
         <nav className="fixed-top navbar navbar-expand-lg navbar-light border-bottom bg-white p-1">
             <div className="container d-flex flex-row justify-content-between align-items-center w-100 flex-nowrap">
                 <div className="d-flex align-items-center w-50">
-                    <button className="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+                    
                     <a className="navbar-brand" href="../">
                         <img src="src/assets/dev-badge.svg" alt="logo" width="40" height="40"
                             className="d-inline-block align-text-top" />
@@ -50,15 +47,15 @@ const Navbar = ({ setSearch }) => {
                     <div className="logout-card d-inline">
 
 
-                        {isLogged && <span>
+                        {isLogged && <span className="d-flex align-items-center">
 
-                            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" className="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Create Post
                             </button>
 
-                            <img src="src/assets/notification-icon.svg" alt="bell" className="iconbell mx-md-3" width="24"
+                            <img src="src/assets/notification-icon.svg" alt="bell" className="iconbell  me-2" width="24"
                                 height="24" />
-                            <div className="dropdown-center d-inline-block">
+                            <div className="dropdown-center">
 
                                 <img src="src/assets/profile-avatar.webp" alt="profile avatar" width="40" height="40"
                                     className="rounded-circle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" />

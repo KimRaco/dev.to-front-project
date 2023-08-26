@@ -128,7 +128,7 @@ const PostDetails = () => {
             {isLogged &&
               <div className="dropdown">
 
-                <button type="button" className="left-aside btn d-lg-block mx-0 my-1 p-0 dropdown-toggle" data-bs-toggle="dropdown" ><img className="dots rounded-circle p-2"
+                <button type="button" className="left-aside btn d-lg-block mx-0  p-0 dropdown-toggle" data-bs-toggle="dropdown" ><img className="dots rounded-circle p-2"
                   src="src/assets/three-dots.svg" alt="" /></button>
                 <ul className="dropdown-menu">
                   <li><button className="dropdown-item text-danger" onClick={handleClick} id={post?._id} >Delete</button></li>
@@ -186,10 +186,13 @@ const PostDetails = () => {
 
                   {isLogged &&
                     <section id="add-comment">
-                      <form onSubmit={handleSubmit(createComment)} className="d-flex">
-                        <img className="rounded-circle border object-fit-cover me-3 user-img" src="https://i.pravatar.cc/" />
-                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="4" {...register('content', { required: true })}></textarea>
-                        <div className="ms-5 ps-2 mb-4">
+                      <form onSubmit={handleSubmit(createComment)} className="">
+                        <div className="d-flex">
+                          <img className="rounded-circle border object-fit-cover me-3 user-img " src="https://i.pravatar.cc/" />
+                          <textarea className="form-control" id="exampleFormControlTextarea1" rows="4" {...register('content', { required: true })}></textarea>
+
+                        </div>
+                        <div className="ms-5 ps-2 mb-4 d-flex">
                           <button type="submit" className="btn btn-primary mt-3 me-2"  >Comment</button>
                           <button type="button" className="btn btn-outline-primary mt-3">Cancel</button>
                         </div>
