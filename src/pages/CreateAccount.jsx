@@ -1,9 +1,10 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { PUBLIC_API_URL } from "../constants/url"
 
 const CreateAccount = () => {
 
-    const BASE_URL = "http://localhost:8080"
+    const BASE_URL = PUBLIC_API_URL
 
 
     const { register, handleSubmit, formState: {errors} } = useForm()
@@ -88,19 +89,19 @@ const CreateAccount = () => {
 
                             <form onSubmit={ handleSubmit(customSubmit) } id="signup-form">
                                 <div className="mb-3">
-                                    <label for="mail" className="form-label fw-semibold ">Email</label>
+                                    <label htmlFor="mail" className="form-label fw-semibold ">Email</label>
                                     <input type="email" className="form-control" {...register('email', {required:true}, {match: /.*@.*\..*/,})}  />
                                     {errors.email?.type === 'required' && <small className='text-danger'>Please provide an email adress</small>}
                                     {errors.email?.type === 'match' && <small className='text-danger'>Please provide a properly formatted email adress</small>}
 
                                 </div>
                                 <div className="mb-3">
-                                    <label for="name" className="form-label fw-semibold">Name</label>
+                                    <label htmlFor="name" className="form-label fw-semibold">Name</label>
                                     <input type="text" className="form-control" {...register('name', {required:true})}  />
                                     {errors.name?.type === 'required' && <small className='text-danger'>Please provide a name</small>}
                                 </div>
                                 <div className="mb-3">
-                                    <label for="pass" className="form-label fw-semibold">Password</label>
+                                    <label htmlFor="pass" className="form-label fw-semibold">Password</label>
                                     <input type="password" className="form-control" {...register('password', {required:true})}  />
                                     {errors.password?.type === 'required' && <small className='text-danger'>Please provide a password</small>}
 

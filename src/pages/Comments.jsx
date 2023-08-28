@@ -1,11 +1,11 @@
 
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-
+import { PUBLIC_API_URL } from "../constants/url"
 
 
 const Comments = () => {
-    const BASE_URL = "http://localhost:8080/"
+    const BASE_URL = PUBLIC_API_URL
     let isLogged = localStorage.getItem('token');
     const token = localStorage.getItem('token');
 
@@ -15,7 +15,7 @@ const Comments = () => {
 
     // Get comments
     const doFetch = async (URL, setter) => {
-        const res = await fetch(`${URL}comments`);
+        const res = await fetch(`${URL}/comments`);
         const response = await res.json();
         setter(response.data.comments);
     }
@@ -41,7 +41,7 @@ const Comments = () => {
 
     const deleteByid = async (id) => {
         let response = await fetch(
-            `${BASE_URL}comments/${id}`,
+            `${BASE_URL}/comments/${id}`,
             {
                 headers: {
                     'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const Comments = () => {
 
 
     const deleteComment = (async (e) => {
-       console.log( e.currentTarget.parentNode.parentNode.parentNode.parentNode.parentNode.remove())
+       e.currentTarget.parentNode.parentNode.parentNode.parentNode.parentNode.remove()
         await deleteByid(e.currentTarget.id);
     })
 

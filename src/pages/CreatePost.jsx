@@ -2,10 +2,11 @@
 import React from 'react'
 import "./createPost.css"
 import { useForm } from 'react-hook-form'
+import { PUBLIC_API_URL } from "../constants/url"
 
 const CreatePost = () => {
 
-    const BASE_URL = "http://localhost:8080"
+    const BASE_URL = PUBLIC_API_URL
 
     const { register, handleSubmit, formState: { errors } } = useForm()
 

@@ -37,12 +37,7 @@ const LeftAside = () => {
                         <h5 className="">DEV Community is a community of 1,033,482 amazing developers</h5>
                         <p className="card-subtitle my-3 text-body-secondary">We're a place where coders share, stay
                             up-to-date and grow their careers.</p>
-                        <div>
-                            <a type="button" href="./views/login.html"
-                                className="btn btn-outline-primary d-block mb-2">Create Account</a>
-                            <a type="button" href="./views/login.html"
-                                className="btn btn-outline-secondary border-0 d-block">Log in</a>
-                        </div>
+                        
                     </div>
                 </div>
 

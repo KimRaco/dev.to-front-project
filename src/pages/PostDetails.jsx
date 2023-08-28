@@ -5,11 +5,10 @@ import moment from "moment";
 import "./postdetails.css"
 import { useForm } from 'react-hook-form'
 import Comments from "./Comments";
+import { PUBLIC_API_URL } from "../constants/url"
 
-
-
-const API_URL = "http://localhost:8080/posts"
-const BASE_URL = "http://localhost:8080/"
+const API_URL = `${PUBLIC_API_URL}/posts`
+const BASE_URL = PUBLIC_API_URL
 
 
 
@@ -76,7 +75,7 @@ const PostDetails = () => {
 
 
     try {
-      const response = await fetch(`${BASE_URL}comments`, {
+      const response = await fetch(`${BASE_URL}/comments`, {
         method: "POST",
         headers: {
           'Authorization': `Bearer ${token}`,

@@ -2,10 +2,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Posts from "./Posts";
 import "./main.css"
+import { PUBLIC_API_URL } from "../constants/url"
 
 const Main = ({search}) => {
 
-    const API_URL = "http://localhost:8080/posts"
+    const API_URL = `${PUBLIC_API_URL}/posts`
 
     const [data, setData] = useState()
     const [isLoading, setIsLoading] = useState(false);
