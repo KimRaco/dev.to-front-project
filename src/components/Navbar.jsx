@@ -22,7 +22,7 @@ const Navbar = ({ setSearch }) => {
                 <div className="d-flex align-items-center w-50">
                     
                     <a className="navbar-brand" href="../">
-                        <img src="src/assets/dev-badge.svg" alt="logo" width="40" height="40"
+                        <img src="/src/assets/dev-badge.svg" alt="logo" width="40" height="40"
                             className="d-inline-block align-text-top" />
                     </a>
                     <div className="input-group  border rounded-2 align-items-center d-none d-lg-flex w-75">
