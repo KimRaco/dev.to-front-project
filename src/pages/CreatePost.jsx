@@ -52,7 +52,7 @@ const CreatePost = () => {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <img className="site-logo__img me-2" width="40" height="40" src="src/assets/dev-badge.svg" alt="DEV Community" />
+                            <img className="site-logo__img me-2" width="40" height="40" src="dev-badge.svg" alt="DEV Community" />
                             <h1 className="modal-title fs-5" id="exampleModalLabel">Create Post</h1>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>

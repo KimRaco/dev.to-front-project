@@ -107,19 +107,19 @@ const PostDetails = () => {
         <aside className="left-aside col-12 col-md-1 col-lg-1 p-0 sticky-sm-bottom mt-5">
           <div className="left-aside__div d-flex justify-content-around d-md-block d-lg-block object-fit-contain sticky-md-top pt-md-5">
             <button type="button" className="left-aside btn d-lg-block  my-1 mx-0 p-0 position-relative">
-              <img className="heart   rounded-circle p-2 d-sm-inline d-lg-block" src="src/assets/heart-icon.svg" alt="" />
+              <img className="heart   rounded-circle p-2 d-sm-inline d-lg-block" src="heart-icon.svg" alt="" />
               <p className=" d-sm-inline d-lg-block">0</p>
               <p className="msj  d-none position-absolute text-white bg-dark rounded p-2">Like</p>
             </button>
 
             <button type="button" className="left-aside btn d-lg-block my-1 mx-0 p-0 position-relative">
-              <img className="comment rounded-circle p-2 d-sm-inline d-lg-block" src="src/assets/comment-icon.svg" alt="" />
+              <img className="comment rounded-circle p-2 d-sm-inline d-lg-block" src="comment-icon.svg" alt="" />
               <p className=" d-sm-inline d-lg-block">0</p>
               <p className="msj  d-none position-absolute text-white bg-dark rounded p-2">Jump to Comments</p>
             </button>
 
             <button type="button" className="left-aside btn d-lg-block my-1 mx-0 p-0 position-relative">
-              <img className="save rounded-circle p-2 d-sm-inline d-lg-block" src="src/assets/save-icon.svg" alt="" />
+              <img className="save rounded-circle p-2 d-sm-inline d-lg-block" src="save-icon.svg" alt="" />
               <p className=" d-sm-inline d-lg-block">0</p>
               <p className="msj  d-none position-absolute text-white bg-dark rounded p-2">Save</p>
             </button>
@@ -128,7 +128,7 @@ const PostDetails = () => {
               <div className="dropdown">
 
                 <button type="button" className="left-aside btn d-lg-block mx-0  p-0 dropdown-toggle" data-bs-toggle="dropdown" ><img className="dots rounded-circle p-2"
-                  src="src/assets/three-dots.svg" alt="" /></button>
+                  src="three-dots.svg" alt="" /></button>
                 <ul className="dropdown-menu">
                   <li><button className="dropdown-item text-danger" onClick={handleClick} id={post?._id} >Delete</button></li>
                   <li><button className="dropdown-item" >Edit</button></li>

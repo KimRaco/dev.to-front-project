@@ -66,9 +66,9 @@ const Posts = ({ posts }) => {
                                 <div className="d-flex justify-content-between w-100">
                                     <div className="d-flex align-items-center">
                                         <span className="d-flex align-items-center me-3">
-                                            <img src="src/assets/heart-icon.svg" alt="" /> Reactions</span>
+                                            <img src="heart-icon.svg" alt="" /> Reactions</span>
                                         <span className="d-flex align-items-center">
-                                            <img src="src/assets/comment-icon.svg" alt="" /> Comments
+                                            <img src="comment-icon.svg" alt="" /> Comments
                                         </span>
                                     </div>
                                     <div>
@@ -76,7 +76,7 @@ const Posts = ({ posts }) => {
                                             {isLogged && <>
                                                 <div className="dropdown">
                                                     <button type="button" className="btn dropdown-toggle mx-2" data-bs-toggle="dropdown" ><img className="dots rounded-circle p-2"
-                                                        src="src/assets/three-dots.svg" alt="" /></button>
+                                                        src="three-dots.svg" alt="" /></button>
                         
                                                     <ul className="dropdown-menu">
                                                         <li><button onClick={handleClick} className="dropdown-item text-danger" id={post._id} >Delete</button></li>
@@ -87,7 +87,7 @@ const Posts = ({ posts }) => {
 
                                             </>
                                             }
-                                            <img src="src/assets/save-icon.svg" alt="" />
+                                            <img src="save-icon.svg" alt="" />
                                         </span>
                                     </div>
                                 </div>

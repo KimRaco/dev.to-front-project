@@ -83,7 +83,7 @@ const Comments = () => {
                                 <div className="dropdown d-flex justify-content-end">
 
                                     <button type="button" className="left-aside btn d-lg-block mx-0 my-1 p-0 dropdown-toggle" data-bs-toggle="dropdown" ><img className="dots rounded-circle p-2"
-                                        src="src/assets/three-dots.svg" alt="" /></button>
+                                        src="three-dots.svg" alt="" /></button>
                                     <ul className="dropdown-menu">
                                         <li><button className="dropdown-item text-danger" onClick={deleteComment} id={comment?._id} >Delete</button></li>
                                         <li><button className="dropdown-item" >Edit</button></li>

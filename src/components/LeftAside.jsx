@@ -7,24 +7,24 @@ const LeftAside = () => {
 
 
     const categoryList = [
-        { name: "Home", img: "src/assets/home-icon.svg", alt: "homeIcon" },
-        { name: "Listings", img: "src/assets/listings-icon.svg", alt: "listingsIcon" },
-        { name: "Podcasts", img: "src/assets/podcast-icon.svg", alt: "podcastsIcon" },
-        { name: "Videos", img: "src/assets/video-icon.svg", alt: "videosIcon" },
-        { name: "Tags", img: "src/assets/tag-icon.svg", alt: "tagsIcon" },
-        { name: "FAQ", img: "src/assets/faq-icon.svg", alt: "faqIcon" },
-        { name: "Forem Shop", img: "src/assets/foremShop-icon.svg", alt: "foremShopIcon" },
-        { name: "Sponsors", img: "src/assets/sponsors-icon.svg", alt: "sponsors" },
-        { name: "About", img: "src/assets/about-icon.svg", alt: "aboutIcon", width: "20" },
-        { name: "Contact", img: "src/assets/contact-icon.svg", alt: "contactIcon" },
-        { name: "Guides", img: "src/assets/guides-icon.svg", alt: "guidesIcon", width: "20" },
-        { name: " Software comparisons", img: "src/assets/softwareComparison-icon.svg", alt: "softwareComparisonIcon", width: "20" },
+        { name: "Home", img: "home-icon.svg", alt: "homeIcon" },
+        { name: "Listings", img: "listings-icon.svg", alt: "listingsIcon" },
+        { name: "Podcasts", img: "podcast-icon.svg", alt: "podcastsIcon" },
+        { name: "Videos", img: "video-icon.svg", alt: "videosIcon" },
+        { name: "Tags", img: "tag-icon.svg", alt: "tagsIcon" },
+        { name: "FAQ", img: "faq-icon.svg", alt: "faqIcon" },
+        { name: "Forem Shop", img: "foremShop-icon.svg", alt: "foremShopIcon" },
+        { name: "Sponsors", img: "sponsors-icon.svg", alt: "sponsors" },
+        { name: "About", img: "about-icon.svg", alt: "aboutIcon", width: "20" },
+        { name: "Contact", img: "contact-icon.svg", alt: "contactIcon" },
+        { name: "Guides", img: "guides-icon.svg", alt: "guidesIcon", width: "20" },
+        { name: " Software comparisons", img: "softwareComparison-icon.svg", alt: "softwareComparisonIcon", width: "20" },
     ]
 
     const categoryListOtherOptions = [
-        { name: "Code of Conduct", img: "src/assets/codeConduct-icon.svg", alt: "codeIcon", width: "20"  },
-        { name: "Privacy Policy", img: "src/assets/privacyPolicy-icon.svg", alt: "privacyPolicyIcon", width: "20"  },
-        { name: "Terms of Use", img: "src/assets/terms-icon.svg", alt: "termsIcon", width: "20" },
+        { name: "Code of Conduct", img: "codeConduct-icon.svg", alt: "codeIcon", width: "20"  },
+        { name: "Privacy Policy", img: "privacyPolicy-icon.svg", alt: "privacyPolicyIcon", width: "20"  },
+        { name: "Terms of Use", img: "terms-icon.svg", alt: "termsIcon", width: "20" },
     ]
 
     return (
@@ -73,17 +73,17 @@ const LeftAside = () => {
                 </ul>
             </div>
             <div className="d-flex justify-content-around py-4 ">
-                <img src="src/assets/tw-icon.svg" alt="" />
-                <img src="src/assets/fb-icon.svg" alt="" />
-                <img src="src/assets/gh-icon.svg" alt="" />
-                <img src="src/assets/ig-icon.svg" alt="" />
-                <img src="src/assets/twt-icon.svg" alt="" />
+                <img src="tw-icon.svg" alt="" />
+                <img src="fb-icon.svg" alt="" />
+                <img src="gh-icon.svg" alt="" />
+                <img src="ig-icon.svg" alt="" />
+                <img src="twt-icon.svg" alt="" />
             </div>
             <div>
                 <div className="d-flex justify-content-between">
                     <h6>My Tags</h6>
                     <span>
-                        <img src="src/assets/crayons-icon.svg" alt="" />
+                        <img src="crayons-icon.svg" alt="" />
                     </span>
                 </div>
                 <div className="list-tags">
@@ -108,7 +108,7 @@ const LeftAside = () => {
             </div>
             <div>
                 <div className="card mt-4">
-                    <img src="src/assets/image-bg-card.png" className="card-img-top" alt="..." />
+                    <img src="image-bg-card.png" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h6 className="card-title fs-5">Calling all early-career developers & coding mentors!</h6>
                         <p className="card-text">Join CodeNewbie Community: a supportive space for coding newbies to

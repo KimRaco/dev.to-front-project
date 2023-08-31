@@ -6,7 +6,7 @@ const RightAside = () => {
 
             <aside className="p-0 my-2 col-12 col-lg-3 fs-6.5 d-none d-md-none d-lg-block">
                 <div className="card ">
-                    <a href=""><img src="src/assets/image-banner-aside-right.webp" className="card-img-top rounded"
+                    <a href=""><img src="image-banner-aside-right.webp" className="card-img-top rounded"
                         alt="..." /></a>
                     <ul className="list-group list-group-flush border border-0 ">
                         <li className="list-group-item fw-bold bg-light fs-4"><a
